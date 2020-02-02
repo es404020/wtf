@@ -1,21 +1,46 @@
-# WTF is Cloud Function
-Thinking of using cloud function in your firebase application then this course is for you.
+# Work Around
+In this section we would learn how to configure cloud function.
 
 
-## Tutorial
-This video to this course is avaliable on Udemy see [link](LICENSE.md).
+## Pre-configure
 
-## Code Structure
-Every topic as the same name as the branch. To compaire code use 
+If you noticed that your project file lacks `lib/index.js` this is for your otherwise move to the next topic.
+
+
+## Configuration
+
+###step 1 
+ Check what version of node you have on your local machine .Use
+
 
 ```
-git checkout [topic-name]
+node —version
+```
+If it is not the same update to  system version by change the node version number on the package .json file
+
+```
+ "engines": {
+    "node": "system-version"
+  },
 ```
 
-## License
-This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details
+### setp 2
 
+Update your main to src/index.js from 
 
-## Author 
+```
+  "main": "lib/index.js", to   "main": "src/index.js",
 
-My name is Ajani Eniola Solomon follow me on twitter at [👑 Solomon](https://twitter.com/ajani_eniola).You can also check out my course on skillshare [flutter firebase for the next billion users](https://www.skillshare.com/r/profile/Ajani-Eniola/9229560).
+```
+
+### step 3
+Edit  your firebase .json file to 
+
+```
+{
+  "functions": {
+    "predeploy": "npm --prefix functions run build"
+  }
+}
+```
+ That all 😀.
