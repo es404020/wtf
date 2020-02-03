@@ -4,7 +4,7 @@ In this section we would learn how to configure cloud function.
 
 ## Pre-configure
 
-If you noticed that your project file lacks `lib/index.js` this is for your otherwise move to the next topic.
+If you noticed that your project file lacks `lib/index.js` this is for you, otherwise move to the next topic.
 
 
 ## Configuration
