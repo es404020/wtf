@@ -24,7 +24,7 @@ If it is not the same update to  system version by change the node version numbe
   },
 ```
 
-### setp 2
+### step 2
 
 Update your main to src/index.js from 
 
