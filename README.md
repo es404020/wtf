@@ -9,7 +9,7 @@ If you noticed that your project file lacks `lib/index.js` this is for you, othe
 
 ## Configuration
 
-###step 1 
+###  step 1 
  Check what version of node you have on your local machine .Use
 
 
