@@ -6,6 +6,9 @@ admin.initializeApp();
 export {createRecord} from './auth';
 
 
+export {createPost} from './firestore';
+
+
 // // Start writing Firebase Functions
 // // https://firebase.google.com/docs/functions/typescript
 //
